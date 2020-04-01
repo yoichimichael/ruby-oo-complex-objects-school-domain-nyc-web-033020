@@ -7,18 +7,9 @@ class School
   end
 
   def roster
-    {}
+    student_hash = {}
 	end
 	
-  def add_student(name, grade)
-    if roster.has_value?(name)
-      roster[grade] << name
-    else
-      roster[grade] = []
-    end
-  end
+  #def add_student(name, grade)
+  #end
 end
-
-school = School.new("Bayside High School")
-school.add_student("AC Slater", 9)
-p school.roster
